@@ -1,0 +1,181 @@
+
+
+.btn-group, .btn-group-vertical {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.bootstrap-select {
+}
+.bootstrap-select.btn-group:not(.input-group-btn), .bootstrap-select.btn-group[class*="col-"] {
+    display: inline-block;
+    float: none;
+    margin-left: 0;
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 220px;
+}
+
+.btn {
+    -moz-user-select: none;
+    background-image: none;
+    /*border: 1px solid transparent;*/
+    /*border-radius: 4px;*/
+    cursor: pointer;
+    display: inline-block;
+    /*font-size: 14px;*/
+    /*font-weight: 400;*/
+    /*line-height: 1.42857;*/
+    /*margin-bottom: 0;*/
+    /*padding: 6px 12px;*/
+    /*text-align: center;*/
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+ /* custom class */
+ /*
+.btn-default {
+    background-color: #fff;
+    border-color: #ccc;
+    color: #333;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    color: #333;
+}
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    background-image: none;
+}
+*/
+
+.btn-group > .btn, .btn-group-vertical > .btn {
+    float: left;
+    position: relative;
+}
+.btn-group > .btn:first-child {
+    margin-left: 0;
+}
+.bootstrap-select > .btn {
+    padding-right: 25px;
+    width: 100%;
+}
+.btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
+    outline: 0 none;
+}
+.btn-group.open .dropdown-toggle {
+    /*box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;*/
+}
+
+    .bootstrap-select.btn-group .btn .filter-option {
+        display: inline-block;
+        overflow: hidden;
+        text-align: left;
+        width: 100%;
+    }
+    .pull-left {
+        float: left !important;
+    }
+    
+    .caret {
+        /*border-left: 4px solid transparent;*/
+        /*border-right: 4px solid transparent;*/
+        /*border-top: 4px solid;*/
+        /*display: inline-block;*/
+        /*height: 0;*/
+        /*margin-left: 2px;*/
+        /*vertical-align: middle;*/
+        /*width: 0;*/
+    }
+    .btn .caret {
+        /*margin-left: 0;*/
+    }
+    .bootstrap-select.btn-group .btn .caret {
+       /* margin-top: -2px;*/
+        /*position: absolute;*/
+        /*right: 12px;*/
+        /*top: 50%;*/
+        /*vertical-align: middle;*/
+    }
+
+
+
+.dropdown-menu {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    /*box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);*/
+    display: none;
+    float: left;
+    font-size: 14px;
+    left: 0;
+    list-style: outside none none;
+    margin: 2px 0 0;
+    min-width: 160px;
+    padding: 5px 0;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    z-index: 1000;
+}
+.open > .dropdown-menu {
+    display: block;
+}
+.bootstrap-select.btn-group .dropdown-menu {
+    /*box-sizing: border-box;*/
+    min-width: 100%;
+    z-index: 1035;
+}
+    
+    ul, ol {
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    .inner {
+        margin: 0 auto;
+        max-width: 840px;
+        padding: 20px 10px;
+        position: relative;
+    }
+    .bootstrap-select.btn-group .dropdown-menu.inner {
+        border: 0 none;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        position: static;
+    }
+
+        .bootstrap-select.btn-group .dropdown-menu li {
+            position: relative;
+        }
+            
+            .dropdown-menu > li > a {
+                clear: both;
+                color: #333;
+                display: block;
+                font-weight: 400;
+                line-height: 1.42857;
+                padding: 3px 20px;
+                white-space: nowrap;
+            }
+            .bootstrap-select.btn-group .dropdown-menu li a {
+                cursor: pointer;
+            }
+
+                .dropdown-menu li a:hover, .dropdown-menu li a:active  {
+                    background-color: #1abc9c;
+                    color: #fff;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+
+                .bootstrap-select.btn-group .dropdown-menu li a span.text {
+                    display: inline-block;
+                }
+            
+            
+ 
