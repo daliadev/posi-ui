@@ -1025,62 +1025,117 @@ body {
 	/*-----  Content Resultat  ------*/
 
 	#posi-page .content .stats {
-	
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		padding: 24px;
 	}
 		
-		#posi-page .content .time {
+		#posi-page .stats .global-text {
 			float: left;
-			width: 75%;
+			width: 73%;
+			/*padding-bottom: 8px;*/
+			margin-right: 2%;
+			border-bottom: 1px solid #bdbdbd;
 		}
-	
+			#posi-page .global-text .time-title {
+				font-size: 1.25em;
+				font-weight: 400;
+			}
+
+				#posi-page .global-text .time {
+					display: inline-block;
+					float: left;
+					font-size: 1.5em;
+					font-weight: 300;
+					line-height: 200%;
+				}
+
+					#posi-page .global-text i {
+						font-size: 1em;
+					}
+
+				#posi-page .global-text .result-title {
+					display: inline-block;
+					float: right;
+					padding-top: 8px;
+					font-size: 1.25em;
+					font-weight: 400;
+					text-align: right;
+					line-height: 200%;
+				}
+
+		#posi-page .stats .reponses {
+			float: left;
+			width: 78%;
+			font-size: 1em;
+			font-weight: 400;
+			text-align: right;
+		}
+
+			#posi-page .global-text .reponses span {
+				font-weight: 300;
+			}
 		
-		#posi-page .content .result {
+		#posi-page .stats .global-result {
 			float: right;
 			position: relative;
 			width: 25%;
+			min-width: 100px;
 			/*height: auto;*/
 			height: 0;
+			min-height: 100px;
 			padding-top: 25%;
 		}
 			
-			#posi-page .result .svg-donut {
+			#posi-page .global-result .svg-donut {
 				position: absolute;
 				top: 0;
 				left: 0;
 				width: 100%;
-				height: 439px;
+				/*height: 100%;*/
 			}
 
-			#posi-page .result circle {
-				fill: none;
-			}
-			
-			#posi-page .result .circle-back {
-				stroke: #bdbdbd;
-				stroke-width: 20px;
-			}
-
-			#posi-page .result .circle-front {
-				stroke: #00bfa5;
-				stroke-width: 20px;
-				/* 2 * Math.PI * radius + 1  */
-				stroke-dasharray: 439px; /*629*/
-				stroke-dashoffset: 439px; /*629*/
+				#posi-page .global-result circle {
+					fill: none;
+				}
 				
-				/*-webkit-transition: stroke-dashoffset .5s ease;
-				-moz-transition: stroke-dashoffset .5s ease; 
-				-ms-transition: stroke-dashoffset .5s ease;
-				-o-transition: stroke-dashoffset .5s ease;
-				transition: stroke-dashoffset .5s ease;*/
-			}
-			
-			#posi-page .result .text-percent {
-				/*font-family: "Oswald", sans-serif;*/
-				color: #009688;
-				font-size: 1.25em;
-			}
+				#posi-page .global-result .circle-back {
+					stroke: #bdbdbd;
+					stroke-width: 20px;
+				}
 
+				#posi-page .global-result .circle-front {
+					stroke: #f57c00;
+					stroke-width: 20px;
+					/* 2 * Math.PI * radius + 1  */
+					stroke-dasharray: 349px;
+					stroke-dashoffset: 349px; /*100%;*/
+					
+					/*-webkit-transition: stroke-dashoffset .5s ease;
+					-moz-transition: stroke-dashoffset .5s ease; 
+					-ms-transition: stroke-dashoffset .5s ease;
+					-o-transition: stroke-dashoffset .5s ease;
+					transition: stroke-dashoffset .5s ease;*/
+				}
+				
+				#posi-page .global-result .text-percent {
+					fill: #f57c00;
+					font-size: 3em;
+					font-weight: 300;
+					/*font-kerning: -10;*/
+					text-align: center;
+					text-anchor: middle;
+					vertical-align: middle;
+					alignment-baseline: middle;
+				}
+					
+					#posi-page .global-result .percent {
+						fill: #f57c00;
+						font-size: 0.5em;
+						baseline-shift: -0.5em;
 
+					}
 
 
 
