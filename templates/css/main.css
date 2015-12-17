@@ -1020,6 +1020,70 @@ body {
 	
 
 
+
+
+	/*-----  Content Resultat  ------*/
+
+	#posi-page .content .stats {
+	
+	}
+		
+		#posi-page .content .time {
+			float: left;
+			width: 75%;
+		}
+	
+		
+		#posi-page .content .result {
+			float: right;
+			position: relative;
+			width: 25%;
+			/*height: auto;*/
+			height: 0;
+			padding-top: 25%;
+		}
+			
+			#posi-page .result .svg-donut {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 439px;
+			}
+
+			#posi-page .result circle {
+				fill: none;
+			}
+			
+			#posi-page .result .circle-back {
+				stroke: #bdbdbd;
+				stroke-width: 20px;
+			}
+
+			#posi-page .result .circle-front {
+				stroke: #00bfa5;
+				stroke-width: 20px;
+				/* 2 * Math.PI * radius + 1  */
+				stroke-dasharray: 439px; /*629*/
+				stroke-dashoffset: 439px; /*629*/
+				
+				/*-webkit-transition: stroke-dashoffset .5s ease;
+				-moz-transition: stroke-dashoffset .5s ease; 
+				-ms-transition: stroke-dashoffset .5s ease;
+				-o-transition: stroke-dashoffset .5s ease;
+				transition: stroke-dashoffset .5s ease;*/
+			}
+			
+			#posi-page .result .text-percent {
+				/*font-family: "Oswald", sans-serif;*/
+				color: #009688;
+				font-size: 1.25em;
+			}
+
+
+
+
+
 	/*-----  Footer  ------*/
 
 	.footer {
