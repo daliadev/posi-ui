@@ -205,8 +205,9 @@ body {
 				display: block;
 				width: 24px;
 				height: 28px;
-				color: #b3e0db;
-				font-size: 24px; /*1.25em;*/
+				/*color: #b3e0db;*/
+				color: #fff;
+				font-size: 1.5em; /*1.25em;*/
 				text-align: center;
 				line-height: 24px;
 				text-decoration: none;
@@ -1046,12 +1047,14 @@ body {
 				#posi-page .global-text .time {
 					display: inline-block;
 					float: left;
+					color: #757575;
 					font-size: 1.5em;
-					font-weight: 300;
+					font-weight: 600;
 					line-height: 200%;
 				}
 
 					#posi-page .global-text i {
+						color: #bdbdbd;
 						font-size: 1.2em;
 					}
 
@@ -1109,8 +1112,8 @@ body {
 					stroke: #f57c00;
 					stroke-width: 20px;
 					/* 2 * Math.PI * radius + 1  */
-					stroke-dasharray: 349px;
-					stroke-dashoffset: 349px; /*100%;*/
+					/*stroke-dasharray: 349px;*/
+					/*stroke-dashoffset: 349px;*/ /*100%;*/
 					
 					/*-webkit-transition: stroke-dashoffset .5s ease;
 					-moz-transition: stroke-dashoffset .5s ease; 
@@ -1121,20 +1124,18 @@ body {
 				
 				#posi-page .global-result .text-percent {
 					fill: #f57c00;
-					font-size: 3em;
+					font-size: 2.8em;
 					font-weight: 300;
-					/*font-kerning: -10;*/
 					text-align: center;
 					text-anchor: middle;
 					vertical-align: middle;
 					alignment-baseline: middle;
+					letter-spacing: -0.03em;
 				}
-					
+
 					#posi-page .global-result .percent {
-						fill: #f57c00;
 						font-size: 0.5em;
 						baseline-shift: -0.5em;
-
 					}
 
 
@@ -1142,14 +1143,15 @@ body {
 
 	#posi-page .content .main-graph {
 		width: 100%;
-		height: auto;
-		/*height: 100%;*/
+		/*height: auto;*/
+		height: 100%;
 		background-color: #fff;
 		padding: 8px 24px 24px 24px;
 	}
 	
 		#posi-page .main-graph .graph-svg {
-			
+			height: 100%;
+			min-height: 75%;
 		}
 			
 			#posi-page .graph-svg .arrow {
@@ -1176,32 +1178,69 @@ body {
 			
 
 			#posi-page .main-graph .cat-bars { 
-
+				
 			}
 
 				#posi-page .cat-bars .cat-bar { 
-
+					min-height: 70px;
 				}
-
-					#posi-page .cat-bars .cat-text { 
-
+					
+					#posi-page .cat-bar .cat-line { 
+						fill: none; 
+						stroke: #bdbdbd;
+						stroke-width: 2px;
 					}
 
-					#posi-page .cat-bars .front  { 
-
+					#posi-page .cat-bar .cat-text { 
+						font-size: 1em;
+						fill: #757575;
+						font-weight: 600;
+						text-anchor: start;
+						baseline-shift: -0.9em;
 					}
 
-					#posi-page .cat-bars .back  { 
-
+					#posi-page .cat-bar .reponses  { 
+						fill: #757575;
+						font-size: 1em;
+						font-weight: 600;
+						text-anchor: end;
+						/*alignment-baseline: before-edge;*/
+						baseline-shift: -0.9em;
 					}
 
-					#posi-page .cat-bars .percent  { 
-
+					#posi-page .cat-bar .front  { 
+						fill: #00bfa5;
+						
+						/*stroke: none;
+						stroke-width: 0px;*/
 					}
 
-					#posi-page .cat-bars .reponses  { 
-
+					#posi-page .cat-bar .back  { 
+						fill: #e0e0e0;
+						/*stroke: none;
+						stroke-width: 0px;*/
 					}
+
+					#posi-page .cat-bar .percent-cat  {
+						fill: #ffffff;
+						font-size: 1.25em;
+						font-weight: 600;
+						text-anchor: end;
+						alignment-baseline: middle;
+					}
+						#posi-page .cat-bar .percent-cat .percent {
+							/*fill: #ffffff;*/
+							font-size: 0.8em;
+							baseline-shift: -0.3em;
+						}
+
+					/*#posi-page .cat-bar .reponses  { 
+						fill: #757575;
+						font-size: 1em;
+						font-weight: 600;
+						text-anchor: end;
+						alignment-baseline: before-edge;
+					}*/
 
 
 
