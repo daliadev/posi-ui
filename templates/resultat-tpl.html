@@ -53,10 +53,9 @@
 				<div class="global-text">
 					<div class="time-title">Temps total</div>
 					<div>
-						<span class="time"><i class="fa fa-clock-o"></i> 21 min 30s</span>
+						<span class="time"><i class="fa fa-clock-o"></i>&nbsp;21 min 30s</span>
 						<span class="result-title"><i></i>Score global</span>
 						<div class="clear"></div>
-						<!-- <hr /> -->
 					</div>
 				</div>
 					
@@ -64,15 +63,15 @@
 
 				<div class="global-result">
 
-					<svg id="global-percent" version="1.1" class="svg-donut" viewBox="0 0 150 150" preserveAspectRatio="xMinYMin meet">
+					<svg id="global-percent" version="1.1" class="svg-donut" viewBox="0 0 140 140" preserveAspectRatio="xMinYMin meet">
 						
-						<g transform="translate(75, 75)">
-							<circle r="65" class="circle-back" />
-							<circle r="65" class="circle-front" transform="rotate(270.1)" />
+						<g transform="translate(70, 70)">
+							<circle r="60" class="circle-back" />
+							<circle r="60" class="circle-front" transform="rotate(270.1)" />
 						</g>
 
 						<g>
-						  <text x="82" y="75" class="text-percent">76<tspan class="percent">%<tspan></text>
+						  <text x="77" y="75" class="text-percent">76<tspan class="percent">%<tspan></text>
 						</g>
 
 					</svg>
@@ -86,28 +85,60 @@
 
 			<div class="main-graph" id="main-graph">
 
-				<!-- <div id="visuel"> -->
+				<svg id="graph-svg" class="graph-svg" version="1.1" viewBox="0 0 716 100" class= preserveAspectRatio="none">
 					
-				<!-- </div> -->
+					<defs> 
+						<polygon id="arrow" class="arrow" points="-3.5,5 0,0 3.5,5" />
+					</defs>
 
-				<div id="grid" class="grid-layer">
+					<g class="bg-grid">
+						<line class="bg-line" x1="8" y1="85" x2="8" y2="0" />
+						<line class="bg-line" x1="78" y1="85" x2="78" y2="0" />
+						<line class="bg-line" x1="148" y1="85" x2="148" y2="0" />
+						<line class="bg-line" x1="218" y1="85" x2="218" y2="0" />
+						<line class="bg-line" x1="288" y1="85" x2="288" y2="0" />
+						<line class="bg-line" x1="358" y1="85" x2="358" y2="0" />
+						<line class="bg-line" x1="428" y1="85" x2="428" y2="0" />
+						<line class="bg-line" x1="498" y1="85" x2="498" y2="0" />
+						<line class="bg-line" x1="568" y1="85" x2="568" y2="0" />
+						<line class="bg-line" x1="638" y1="85" x2="638" y2="0" />
+						<line class="bg-line" x1="708" y1="85" x2="708" y2="0" />
+					</g>
 
-					<svg id="grid-svg" version="1.1" viewBox="0 0 50 50" preserveAspectRatio="xMinYMin meet">
-						<!-- <circle id="loader-bg" r="25" transform="translate(25, 25) rotate(-90)"></circle>
-						<circle id="loader-bg" r="24" transform="translate(26.5, 26) rotate(-90)"></circle> -->
-					</svg>
+					<g class="arrows">
+						<use xlink:href="#arrow" x="8" y="85" />
+						<use xlink:href="#arrow" x="78" y="85" />
+						<use xlink:href="#arrow" x="148" y="85" />
+						<use xlink:href="#arrow" x="218" y="85" />
+						<use xlink:href="#arrow" x="288" y="85" />
+						<use xlink:href="#arrow" x="358" y="85" />
+						<use xlink:href="#arrow" x="428" y="85" />
+						<use xlink:href="#arrow" x="498" y="85" />
+						<use xlink:href="#arrow" x="568" y="85" />
+						<use xlink:href="#arrow" x="638" y="85" />
+						<use xlink:href="#arrow" x="708" y="85" />
+					</g>
 
-				</div>
-				
-				<!-- <div id="loader"> -->
-					<!-- <div class="image-loader"></div> -->
-					<!-- <div class="custom-loader"></div> -->
-
-					<!-- <svg id="svg-loader" version="1.1" viewBox="0 0 50 50" preserveAspectRatio="xMinYMin meet"> -->
-						<!-- <circle id="loader-bg" r="25" transform="translate(25, 25) rotate(-90)"></circle> -->
-						<!-- <circle id="loader-bg" r="24" transform="translate(26.5, 26) rotate(-90)"></circle> -->
-					<!-- </svg> -->
-				<!-- </div> -->
+					<g class="bg-percent-text">
+						<text class="text-percent" x="8" y="100">0%</text>
+						<text class="text-percent" x="78" y="100">10%</text>
+						<text class="text-percent" x="148" y="100">20%</text>
+						<text class="text-percent" x="218" y="100">30%</text>
+						<text class="text-percent" x="288" y="100">40%</text>
+						<text class="text-percent" x="358" y="100">50%</text>
+						<text class="text-percent" x="428" y="100">60%</text>
+						<text class="text-percent" x="498" y="100">70%</text>
+						<text class="text-percent" x="568" y="100">80%</text>
+						<text class="text-percent" x="638" y="100">90%</text>
+						<text class="text-percent" x="707" y="100">100%</text>
+					</g>
+					
+					<g class="cat-bars">
+						<g class="cat-bar">
+						
+						</g>
+					</g>
+				</svg>
 
 				<!-- 
 				<div id="speaker">
@@ -129,8 +160,7 @@
 
 		<!-- Footer -->
 		<div class="footer" id="footer">
-			<p class="txt-footer">A propos - Contact - © Education et formation 2014-2015 </p>
-			<!-- <p></p> -->
+			<p class="txt-footer">A propos - Contact - © Education et formation 2014-2015</p>
 		</div>
 
 	</div>
